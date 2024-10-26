@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Ana branch'in adını yaz
+
+media_folder: "uploads" # Yüklenen görsellerin depolanacağı klasör
+public_folder: "/uploads"
+
+collections:
+  - name: "content"
+    label: "İçerikler"
+    files:
+      - label: "Anasayfa"
+        name: "anasayfa"
+        file: "index.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Özet", name: "summary", widget: "text" }
