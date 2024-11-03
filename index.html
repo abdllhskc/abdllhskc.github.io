@@ -32,16 +32,15 @@
     .header {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
     }
     .header img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       margin-right: 20px;
     }
     .header h1 {
-      font-size: 24px;
+      font-size: 28px;
       margin: 0;
       color: #333;
     }
@@ -93,43 +92,6 @@
       font-size: 16px;
       cursor: pointer;
     }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .container {
-        padding: 15px;
-      }
-      .header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .header img {
-        margin-bottom: 10px;
-      }
-      .header h1 {
-        font-size: 22px;
-      }
-      .contact-info {
-        font-size: 13px;
-      }
-      .experience-item h3, .education-item h3 {
-        font-size: 16px;
-      }
-      .skills-list {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 10px;
-      }
-      .pdf-button {
-        width: 100%;
-        font-size: 14px;
-        padding: 10px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -140,20 +102,100 @@
     <div>
       <h1>Abdullah Sökücü</h1>
       <h5>1993 (30 Yaş)</h5>
+
       <p class="contact-info">
         Teknik Destek Uzmanı<br>
-        <strong>E-posta:</strong> abdullahskc@gmail.com | <strong>Telefon:</strong> +90 539 456 2563 | <strong>Konum:</strong> Okmeydanı, İstanbul, Türkiye
+          <strong>E-posta:</strong> abdullahskc@gmail.com | <strong>Telefon:</strong> +90 539 456 2563 | <strong>Konum:</strong> Okmeydanı, İstanbul, Türkiye
       </p>
     </div>
   </div>
 
   <div class="section">
     <h2>Profesyonel Özet</h2>
-    <p>Ağ yönetimi, sistem bakımı ve kullanıcı desteğinde 5+ yıllık deneyim sahibiyim...</p>
+    <p>Ağ yönetimi, sistem bakımı ve kullanıcı desteğinde 5+ yıllık deneyim sahibiyim. Ağ cihazlarının yönetimi, son kullanıcı sorun giderme ve yedekleme süreçlerinde yüksek çözüm odaklı destek sunma konusunda yetkin. Windows Server yönetimi, VEEAM yedekleme, güvenlik sistemleri ve teknik destek konularında güçlü bilgi birikimine sahibim.</p>
   </div>
 
-  <!-- İş Deneyimleri, Eğitim, Sertifikalar ve Yetenekler Bölümleri Aynı Kalır -->
+  <div class="section">
+    <h2>İş Deneyimleri</h2>
+    <div class="experience-item">
+      <h3>Teknik Destek Elemanı - Karteknik İletişim Bilgisayar</h3>
+      <p><em>Aralık 2018 - Günümüz | Bilgi Teknolojileri Sektörü</em></p>
+      <ul>
+        <li>6 farklı müşteriye yüksek memnuniyet oranıyla sistem ve kullanıcı desteği sağladım.</li>
+        <li>PC ve notebook bakımlarını düzenli olarak gerçekleştirdim ve donanım değişikliklerini optimize ettim.</li>
+        <li>Zyxel ve Fortinet firewall cihazlarına destek sağladım.</li>
+        <li>VEEAM Backup ile düzenli yedekleme kontrolleri yaparak veri güvenliği sağladım.</li>
+        <li>Windows Server yönetimi (Active Directory, dosya, DHCP ve yazıcı sunucuları) sağladım.</li>
+        <li>Bir müşteri için web sitesi yönetimi ve e-posta imzaları hazırlama süreçlerini üstlendim.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Teknik Personel - Sinüs Bilgi Teknolojileri</h3>
+      <p><em>Ağustos 2010 - Ocak 2011 | Bilişim Sektörü</em></p>
+      <ul>
+        <li>Bakım anlaşmalı firmalara sistem desteği sağladım ve altyapı güvenilirliğini artırdım.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Teknik Personel - Netem Bilgisayar & Uydu Sistemleri</h3>
+      <p><em>Şubat 2009 - Ocak 2010</em></p>
+      <ul>
+        <li>Göktürk semtindeki site yönetimlerine ve çevredeki ev müşterilerine teknik destek sağladım, müşteri memnuniyetini artırdım.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Teknik Stajyer - Kalem Yazılım</h3>
+      <p><em>Mayıs 2008 - Eylül 2008</em></p>
+      <ul>
+        <li>IT destek süreçlerinde temel bilgi edinerek, müşteri memnuniyeti konusunda deneyim kazandım.</li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="section">
+    <h2>Eğitim</h2>
+    <div class="education-item">
+      <h3>Anadolu Üniversitesi - Yönetim Bilişim Sistemleri Lisans</h3>
+      <p>Devam Ediyor</p>
+    </div>
+    <div class="education-item">
+      <h3>Plato Meslek Yüksekokulu - İnternet ve Ağ Teknolojileri Ön Lisans</h3>
+      <p>2014 - 2017</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Sertifikalar</h2>
+    <ul>
+      <li>Siber Güvenliğe Giriş - Turkcell Akademi (08.2022)</li>
+      <li>Temel Programlama ve Algoritma - ISMEK (07.2018)</li>
+      <li>Windows 10: Troubleshooting for IT Support - LinkedIn Learning (Haziran 2021)</li>
+      <li>Introduction to Cybersecurity - Cisco (Nisan 2021)</li>
+      <li>CCNA Yönlendirme ve Anahtarlama - Yegitek (Haziran 2016)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Yetenekler</h2>
+    <ul class="skills-list">
+      <li>Hyper-V</li>
+      <li>VMware</li>
+      <li>VEEAM Backup</li>
+      <li>Forigate</li>
+      <li>Zywall</li>
+      <li>Windows 10/11</li>
+      <li>Macos</li>
+      <li>Windows Server 2012/2016/2019</li>
+      <li>Microsoft Active Directory</li>
+      <li>MSSQL Server</li>
+      <li>Linux (Ubuntu, Debian)</li>
+      <li>DHCP, DNS Yönetimi</li>
+      <li>HTML, CSS</li>
+      <li>WordPress Yönetimi</li>
+      <li>Microsoft Office</li>
+      <li>Temel Ağ Güvenliği</li>
+    </ul>
+  </div>
 </div>
 
 <!-- PDF İndirme Butonu -->
